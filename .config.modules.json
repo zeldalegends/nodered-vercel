@@ -1,0 +1,8 @@
+{
+    "@replit/database": {
+        "spec": "@replit/database",
+        "module": "@replit/database",
+        "builtin": false,
+        "known": false
+    }
+}

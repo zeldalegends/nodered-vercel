@@ -1,0 +1,27 @@
+{
+	"name": "nodered",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "./node_modules/.bin/nodemon"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@replit/database": "latest",
+		"express": "latest",
+		"node": "16.x",
+		"node-red": "latest",
+		"node-red-contrib-fs": "latest",
+		"node-red-contrib-telegrambot-home": "latest",
+		"node-red-contrib-ui-upload": "latest",
+		"node-red-contrib-watchdirectory": "fatoldsun00/node-red-contrib-watchdirectory",
+		"node-red-dashboard": "latest",
+		"node-red-node-mongodb": "latest",
+		"node-red-node-ui-table": "latest",
+		"nodemon": "latest"
+	}
+}

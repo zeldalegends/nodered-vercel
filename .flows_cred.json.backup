@@ -1,0 +1,12 @@
+{
+    "8b7a1d2285638fa0": {},
+    "be328a48cb9e1cbf": {
+        "token": "${TELEGRAM_TOKEN}"
+    },
+    "482f39854fbdd633": {},
+    "2bb8dfa0.48854": {
+        "user": "${DB_USR}",
+        "password": "${DB_PWD}"
+    },
+    "4cc5fe58b2fd7841": {}
+}
