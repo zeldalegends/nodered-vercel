@@ -1,19 +1,18 @@
 {
-	"name": "nodered",
+	"name": "nodered-replit",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "./node_modules/.bin/nodemon -e 'restart'"
+		"start": "nodemon -e 'restart' -x './node_modules/node-red/red.js --userDir ./'"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "alerox",
 	"license": "ISC",
 	"dependencies": {
 		"@replit/database": "latest",
 		"express": "latest",
-		"node": "16.x",
 		"node-red": "latest",
 		"node-red-contrib-fs": "latest",
 		"node-red-contrib-telegrambot-home": "latest",
@@ -21,7 +20,10 @@
 		"node-red-contrib-watchdirectory": "fatoldsun00/node-red-contrib-watchdirectory",
 		"node-red-dashboard": "latest",
 		"node-red-node-mongodb": "latest",
-		"node-red-node-ui-table": "latest",
+		"node-red-node-ui-table": "latest"
+	},
+	"devDependencies": {
+		"node": "16.x",
 		"nodemon": "latest"
 	}
 }

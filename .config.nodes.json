@@ -405,6 +405,126 @@
             }
         }
     },
+    "node-red-contrib-fs": {
+        "name": "node-red-contrib-fs",
+        "version": "1.4.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "File Lister": {
+                "name": "File Lister",
+                "types": [
+                    "fs-file-lister"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-fs",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-fs/fs/fs-file-lister.js"
+            }
+        }
+    },
+    "node-red-contrib-telegrambot-home": {
+        "name": "node-red-contrib-telegrambot-home",
+        "version": "0.7.0",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "bot": {
+                "name": "bot",
+                "types": [
+                    "telegrambot-config"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-telegrambot-home",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/bot-config/bot-config.js"
+            },
+            "command": {
+                "name": "command",
+                "types": [
+                    "telegrambot-command"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-telegrambot-home",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/command/command.js"
+            },
+            "switch": {
+                "name": "switch",
+                "types": [
+                    "telegrambot-switch"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-telegrambot-home",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/switch/switch.js"
+            },
+            "notify": {
+                "name": "notify",
+                "types": [
+                    "telegrambot-notify"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-telegrambot-home",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/notify/notify.js"
+            },
+            "payload": {
+                "name": "payload",
+                "types": [
+                    "telegrambot-payload"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-telegrambot-home",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/payload/payload.js"
+            }
+        }
+    },
+    "node-red-contrib-ui-upload": {
+        "name": "node-red-contrib-ui-upload",
+        "version": "0.4.4",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "ui_upload": {
+                "name": "ui_upload",
+                "types": [
+                    "ui_upload"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-ui-upload",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-ui-upload/ui_upload.js"
+            }
+        }
+    },
+    "node-red-contrib-watchdirectory": {
+        "name": "node-red-contrib-watchdirectory",
+        "version": "1.0.15",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "node-red-watchdirectory.js": {
+                "name": "node-red-watchdirectory.js",
+                "types": [
+                    "watch-directory"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-watchdirectory",
+                "file": "/home/runner/nodered/node_modules/node-red-contrib-watchdirectory/node-red-watchdirectory.js"
+            }
+        }
+    },
     "node-red-dashboard": {
         "name": "node-red-dashboard",
         "version": "3.1.2",
@@ -644,85 +764,24 @@
             }
         }
     },
-    "node-red-contrib-telegrambot-home": {
-        "name": "node-red-contrib-telegrambot-home",
-        "version": "0.7.0",
+    "node-red-node-mongodb": {
+        "name": "node-red-node-mongodb",
+        "version": "0.2.5",
         "local": true,
         "user": true,
         "nodes": {
-            "bot": {
-                "name": "bot",
+            "mongo": {
+                "name": "mongo",
                 "types": [
-                    "telegrambot-config"
+                    "mongodb",
+                    "mongodb out",
+                    "mongodb in"
                 ],
                 "enabled": true,
                 "local": true,
                 "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/bot-config/bot-config.js"
-            },
-            "command": {
-                "name": "command",
-                "types": [
-                    "telegrambot-command"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/command/command.js"
-            },
-            "switch": {
-                "name": "switch",
-                "types": [
-                    "telegrambot-switch"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/switch/switch.js"
-            },
-            "notify": {
-                "name": "notify",
-                "types": [
-                    "telegrambot-notify"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/notify/notify.js"
-            },
-            "payload": {
-                "name": "payload",
-                "types": [
-                    "telegrambot-payload"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/payload/payload.js"
-            }
-        }
-    },
-    "node-red-contrib-fs": {
-        "name": "node-red-contrib-fs",
-        "version": "1.4.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "File Lister": {
-                "name": "File Lister",
-                "types": [
-                    "fs-file-lister"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-fs",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-fs/fs/fs-file-lister.js"
+                "module": "node-red-node-mongodb",
+                "file": "/home/runner/nodered/node_modules/node-red-node-mongodb/66-mongodb.js"
             }
         }
     },
@@ -742,65 +801,6 @@
                 "user": false,
                 "module": "node-red-node-ui-table",
                 "file": "/home/runner/nodered/node_modules/node-red-node-ui-table/node.js"
-            }
-        }
-    },
-    "node-red-contrib-watchdirectory": {
-        "name": "node-red-contrib-watchdirectory",
-        "version": "1.0.15",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "node-red-watchdirectory.js": {
-                "name": "node-red-watchdirectory.js",
-                "types": [
-                    "watch-directory"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-watchdirectory",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-watchdirectory/node-red-watchdirectory.js"
-            }
-        }
-    },
-    "node-red-contrib-ui-upload": {
-        "name": "node-red-contrib-ui-upload",
-        "version": "0.4.4",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "ui_upload": {
-                "name": "ui_upload",
-                "types": [
-                    "ui_upload"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-ui-upload",
-                "file": "/home/runner/nodered/node_modules/node-red-contrib-ui-upload/ui_upload.js"
-            }
-        }
-    },
-    "node-red-node-mongodb": {
-        "name": "node-red-node-mongodb",
-        "version": "0.2.5",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "mongo": {
-                "name": "mongo",
-                "types": [
-                    "mongodb",
-                    "mongodb out",
-                    "mongodb in"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-node-mongodb",
-                "file": "/home/runner/nodered/node_modules/node-red-node-mongodb/66-mongodb.js"
             }
         }
     }

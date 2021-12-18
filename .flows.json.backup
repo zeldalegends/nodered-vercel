@@ -2212,7 +2212,7 @@
         "authType": "",
         "senderr": false,
         "x": 350,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "8cff6715d7c54bef",
@@ -2224,6 +2224,7 @@
         "id": "e4efd622be01b5ab",
         "type": "inject",
         "z": "79404673d12941f2",
+        "d": true,
         "name": "keep alive",
         "props": [
             {
@@ -2241,7 +2242,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 130,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "8b7a1d2285638fa0"
@@ -2262,7 +2263,7 @@
         "statusVal": "statusCode",
         "statusType": "msg",
         "x": 570,
-        "y": 260,
+        "y": 280,
         "wires": []
     },
     {
@@ -2270,12 +2271,12 @@
         "type": "file",
         "z": "79404673d12941f2",
         "name": "",
-        "filename": "activations.log",
+        "filename": "public/activations.log",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 380,
+        "x": 400,
         "y": 340,
         "wires": [
             [
@@ -2358,6 +2359,7 @@
         "id": "df6c6a1f801e8577",
         "type": "ui_text",
         "z": "79404673d12941f2",
+        "d": true,
         "group": "771697455c511c76",
         "order": 1,
         "width": 0,
@@ -2367,7 +2369,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 850,
+        "x": 890,
         "y": 420,
         "wires": []
     },
@@ -2390,7 +2392,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
+        "x": 660,
         "y": 380,
         "wires": [
             [
@@ -2403,13 +2405,13 @@
         "type": "file",
         "z": "79404673d12941f2",
         "name": "",
-        "filename": "last.restart",
+        "filename": "public/last.restart",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 910,
-        "y": 240,
+        "x": 890,
+        "y": 260,
         "wires": [
             []
         ]
@@ -2434,8 +2436,8 @@
         "payloadType": "date",
         "topic": "topic",
         "topicType": "msg",
-        "x": 720,
-        "y": 200,
+        "x": 660,
+        "y": 220,
         "wires": [
             [
                 "be188377ee742387"
@@ -2446,6 +2448,7 @@
         "id": "1fd9e9c2f0e0cecf",
         "type": "ui_text",
         "z": "79404673d12941f2",
+        "d": true,
         "group": "771697455c511c76",
         "order": 4,
         "width": 0,
@@ -2455,8 +2458,8 @@
         "format": "{{msg.payload|number:2}} / {{msg.topic|number:2}} GB",
         "layout": "row-spread",
         "className": "",
-        "x": 830,
-        "y": 500,
+        "x": 870,
+        "y": 460,
         "wires": []
     },
     {
@@ -2476,7 +2479,8 @@
         "wires": [
             [
                 "1fd9e9c2f0e0cecf",
-                "b66629b138e2513a"
+                "b66629b138e2513a",
+                "291f16c5ec26bd63"
             ],
             [
                 "1fd9e9c2f0e0cecf",
@@ -2519,7 +2523,7 @@
         "z": "79404673d12941f2",
         "name": "UptimeRobot",
         "info": "https://uptimerobot.com/dashboard\n<br>\n(gamesup|1-6)",
-        "x": 890,
+        "x": 910,
         "y": 40,
         "wires": []
     },
@@ -2532,10 +2536,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
+        "x": 890,
         "y": 540,
         "wires": []
     },
@@ -2582,12 +2587,56 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
+        "x": 650,
         "y": 460,
         "wires": [
             [
                 "526e89c6c604f442"
             ]
+        ]
+    },
+    {
+        "id": "291f16c5ec26bd63",
+        "type": "ui_chart",
+        "z": "79404673d12941f2",
+        "name": "",
+        "group": "771697455c511c76",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "{{msg.payload|number:2}} / {{msg.topic|number:2}} GB",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
         ]
     },
     {
@@ -2849,7 +2898,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "$fromMillis(time, \"[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] \", \"+0100\") & \"\\\\t\" & statusCode & \"\\\\ttest\"",
+                "to": "$fromMillis(time, \"[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]\\t\", \"+0100\") & statusCode & \"\\tinternal\"",
                 "tot": "jsonata"
             }
         ],
@@ -2870,8 +2919,9 @@
         "id": "b9e305ca4e49cf41",
         "type": "file",
         "z": "9c023d7bca1dcba3",
+        "d": true,
         "name": "",
-        "filename": "activations.log",
+        "filename": "public/activations.log",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "false",
@@ -2888,6 +2938,7 @@
         "id": "fae2ca0dbb7b8653",
         "type": "ui_text",
         "z": "9c023d7bca1dcba3",
+        "d": true,
         "group": "9ee91c1b.c2b67",
         "order": 1,
         "width": 0,
@@ -2905,6 +2956,7 @@
         "id": "8dfb3ae1ef57275f",
         "type": "inject",
         "z": "9c023d7bca1dcba3",
+        "d": true,
         "name": "every 5 min",
         "props": [
             {
@@ -3104,7 +3156,7 @@
         "name": "Find documents",
         "info": "\n",
         "x": 100,
-        "y": 460,
+        "y": 440,
         "wires": []
     },
     {
@@ -3125,7 +3177,7 @@
         "payload": "{\"name\":\"Replit\"}",
         "payloadType": "json",
         "x": 120,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
                 "8b3820b8551d1a01"
@@ -3156,7 +3208,7 @@
         "collection": "cloud",
         "operation": "find",
         "x": 410,
-        "y": 540,
+        "y": 520,
         "wires": [
             [
                 "daed08f902c437e9"
@@ -3181,7 +3233,7 @@
         "payload": "{}",
         "payloadType": "json",
         "x": 150,
-        "y": 560,
+        "y": 540,
         "wires": [
             [
                 "8b3820b8551d1a01"
@@ -3199,7 +3251,7 @@
         "tostatus": false,
         "complete": "false",
         "x": 690,
-        "y": 560,
+        "y": 540,
         "wires": []
     },
     {
@@ -3207,8 +3259,8 @@
         "type": "comment",
         "z": "9c023d7bca1dcba3",
         "name": "MongoDB Atlas",
-        "info": "https://cloud.mongodb.com/\n<br>\n(gamesup / mongosup)",
-        "x": 900,
+        "info": "https://cloud.mongodb.com/\n<br>\n(gamesup / mongosup)\n${ATLAS_USERNAME}\n${ATLAS_PASSWORD}",
+        "x": 920,
         "y": 40,
         "wires": []
     },
@@ -3217,9 +3269,9 @@
         "type": "comment",
         "z": "af18fc3a6ea20002",
         "name": "Telegram token",
-        "info": "${TELEGRAM_TOKEN}",
-        "x": 780,
-        "y": 160,
+        "info": "https://web.telegram.org/\n<br>\n${TELEGRAM_TOKEN}",
+        "x": 920,
+        "y": 40,
         "wires": []
     },
     {
@@ -3264,7 +3316,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 310,
+        "x": 350,
         "y": 240,
         "wires": []
     },
@@ -3326,7 +3378,7 @@
         "chatId": "1269409529",
         "message": "",
         "parseMode": "",
-        "x": 460,
+        "x": 540,
         "y": 160,
         "wires": []
     },

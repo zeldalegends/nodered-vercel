@@ -1,9 +1,17 @@
 ## Node-RED on line
+by Alerox, 2021
 
-![file](node-red-flow.png) 
+![file](public/node-red-flow.png) 
 
-Latest Node-RED version on Node.js v16.x.
-Delete or rename **.replit** to use the *embedded* version on Node.js v12. Then stop the runtime (`Ctrl` + `Enter`)) and launch
-> npm start
-in the Shell menu to run the *embedded* version in Node.js v16.x.
-#### N.B. The *embedded* version is closed once the browser is shut down!
+Node-RED on Node.js v16. Versions customizable in *package.json*.
+
+### Node-RED Always Available Anywhere 
+Powered by [UptimeRobot](https://uptimerobot.com/dashboard).
+
+### Node-RED embedded version
+To use *index.js*, rename or delete *.replit*.
+
+Original *.replit* file:
+> run = "./node_modules/.bin/nodemon --ext 'restart' --exec './node_modules/node-red/red.js --userDir ./'"
+
+**Tips:** Use `Ctrl`+`F2` to replace all occurrences of a string.
