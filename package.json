@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon -e 'restart' -x './node_modules/node-red/red.js --userDir ./'"
+		"start": "node index.js"
 	},
 	"keywords": [],
 	"author": "alerox",

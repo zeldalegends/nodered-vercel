@@ -408,8 +408,8 @@
     "node-red-contrib-fs": {
         "name": "node-red-contrib-fs",
         "version": "1.4.1",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "File Lister": {
                 "name": "File Lister",
@@ -417,7 +417,7 @@
                     "fs-file-lister"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-fs",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-fs/fs/fs-file-lister.js"
@@ -427,8 +427,8 @@
     "node-red-contrib-telegrambot-home": {
         "name": "node-red-contrib-telegrambot-home",
         "version": "0.7.0",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "bot": {
                 "name": "bot",
@@ -436,7 +436,7 @@
                     "telegrambot-config"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-telegrambot-home",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/bot-config/bot-config.js"
@@ -447,7 +447,7 @@
                     "telegrambot-command"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-telegrambot-home",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/command/command.js"
@@ -458,7 +458,7 @@
                     "telegrambot-switch"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-telegrambot-home",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/switch/switch.js"
@@ -469,7 +469,7 @@
                     "telegrambot-notify"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-telegrambot-home",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/notify/notify.js"
@@ -480,7 +480,7 @@
                     "telegrambot-payload"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-telegrambot-home",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-telegrambot-home/nodes/payload/payload.js"
@@ -490,8 +490,8 @@
     "node-red-contrib-ui-upload": {
         "name": "node-red-contrib-ui-upload",
         "version": "0.4.4",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "ui_upload": {
                 "name": "ui_upload",
@@ -499,7 +499,7 @@
                     "ui_upload"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-ui-upload",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-ui-upload/ui_upload.js"
@@ -509,8 +509,8 @@
     "node-red-contrib-watchdirectory": {
         "name": "node-red-contrib-watchdirectory",
         "version": "1.0.15",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "node-red-watchdirectory.js": {
                 "name": "node-red-watchdirectory.js",
@@ -518,7 +518,7 @@
                     "watch-directory"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-watchdirectory",
                 "file": "/home/runner/nodered/node_modules/node-red-contrib-watchdirectory/node-red-watchdirectory.js"
@@ -528,8 +528,8 @@
     "node-red-dashboard": {
         "name": "node-red-dashboard",
         "version": "3.1.2",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "ui_base": {
                 "name": "ui_base",
@@ -537,7 +537,7 @@
                     "ui_base"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_base.js"
@@ -548,7 +548,7 @@
                     "ui_button"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_button.js"
@@ -559,7 +559,7 @@
                     "ui_dropdown"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
@@ -570,7 +570,7 @@
                     "ui_switch"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_switch.js"
@@ -581,7 +581,7 @@
                     "ui_slider"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_slider.js"
@@ -592,7 +592,7 @@
                     "ui_numeric"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_numeric.js"
@@ -603,7 +603,7 @@
                     "ui_text_input"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_text_input.js"
@@ -614,7 +614,7 @@
                     "ui_date_picker"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
@@ -625,7 +625,7 @@
                     "ui_colour_picker"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
@@ -636,7 +636,7 @@
                     "ui_form"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_form.js"
@@ -647,7 +647,7 @@
                     "ui_text"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_text.js"
@@ -658,7 +658,7 @@
                     "ui_gauge"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_gauge.js"
@@ -669,7 +669,7 @@
                     "ui_chart"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_chart.js"
@@ -680,7 +680,7 @@
                     "ui_audio"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_audio.js"
@@ -691,7 +691,7 @@
                     "ui_toast"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_toast.js"
@@ -702,7 +702,7 @@
                     "ui_ui_control"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
@@ -713,7 +713,7 @@
                     "ui_template"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_template.js"
@@ -724,7 +724,7 @@
                     "ui_link"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_link.js"
@@ -735,7 +735,7 @@
                     "ui_tab"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_tab.js"
@@ -746,7 +746,7 @@
                     "ui_group"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_group.js"
@@ -757,7 +757,7 @@
                     "ui_spacer"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-dashboard",
                 "file": "/home/runner/nodered/node_modules/node-red-dashboard/nodes/ui_spacer.js"
@@ -767,8 +767,8 @@
     "node-red-node-mongodb": {
         "name": "node-red-node-mongodb",
         "version": "0.2.5",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "mongo": {
                 "name": "mongo",
@@ -778,7 +778,7 @@
                     "mongodb in"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-node-mongodb",
                 "file": "/home/runner/nodered/node_modules/node-red-node-mongodb/66-mongodb.js"
@@ -788,8 +788,8 @@
     "node-red-node-ui-table": {
         "name": "node-red-node-ui-table",
         "version": "0.3.11",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "ui_table": {
                 "name": "ui_table",
@@ -797,7 +797,7 @@
                     "ui_table"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-node-ui-table",
                 "file": "/home/runner/nodered/node_modules/node-red-node-ui-table/node.js"
