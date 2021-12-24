@@ -1,0 +1,2438 @@
+[
+    {
+        "id": "f7f17d364858862c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "111b52d7f72dcde4",
+        "type": "tab",
+        "label": "File system",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4cbb56a89476ae35",
+        "type": "tab",
+        "label": "MongoDB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "48478ea4716b8ef9",
+        "type": "telegrambot-config",
+        "botname": "OpeNode",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "300"
+    },
+    {
+        "id": "57792b9dcc10cc06",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0405720ebce8af5c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e1f0b9913e3ecb26",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "57792b9dcc10cc06",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "160e81fb.f1c86e",
+        "type": "ui_group",
+        "name": "File Browser",
+        "tab": "b63d1f91.68095",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddb72df8452ba7d7",
+        "type": "ui_group",
+        "name": "Desktop",
+        "tab": "b63d1f91.68095",
+        "order": 4,
+        "disp": true,
+        "width": 28,
+        "collapse": false
+    },
+    {
+        "id": "af2fe563cfd2cfa6",
+        "type": "ui_group",
+        "name": "Mobile",
+        "tab": "b63d1f91.68095",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "26e8fe8026c92abb",
+        "type": "ui_group",
+        "name": "Properties",
+        "tab": "b63d1f91.68095",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4128a70510a0cd4e",
+        "type": "ui_group",
+        "name": "Text editor",
+        "tab": "b63d1f91.68095",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b63d1f91.68095",
+        "type": "ui_tab",
+        "name": "Files",
+        "icon": "folder_open",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9ee91c1b.c2b67",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "b37faec6.3798a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2bb8dfa0.48854",
+        "type": "mongodb",
+        "hostname": "cluster0.ii09c.mongodb.net",
+        "topology": "dnscluster",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "test",
+        "name": ""
+    },
+    {
+        "id": "b37faec6.3798a",
+        "type": "ui_tab",
+        "name": "Mongo DB Atlas",
+        "icon": "extension",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b27848e0ab75b2c7",
+        "type": "http in",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "url": "/test",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "e5c27c2ec76e5bce"
+            ]
+        ]
+    },
+    {
+        "id": "ca8eb74f0a681cb9",
+        "type": "http response",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e5c27c2ec76e5bce",
+        "type": "change",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$random()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "ca8eb74f0a681cb9",
+                "c45a6bf0bb2c3bc1"
+            ]
+        ]
+    },
+    {
+        "id": "2fa9bb7c9e72f7dd",
+        "type": "telegrambot-command",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "bot": "48478ea4716b8ef9",
+        "command": "/start",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "6d7a2b3680281c1c"
+            ]
+        ]
+    },
+    {
+        "id": "1882cec8990d7085",
+        "type": "telegrambot-notify",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "bot": "48478ea4716b8ef9",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 600,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6d7a2b3680281c1c",
+        "type": "change",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "https://instance-30160-ehoyibzpwa-ew.a.run.app/",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "1882cec8990d7085"
+            ]
+        ]
+    },
+    {
+        "id": "c45a6bf0bb2c3bc1",
+        "type": "ui_chart",
+        "z": "f7f17d364858862c",
+        "name": "",
+        "group": "e1f0b9913e3ecb26",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c981c62d50fb6e0",
+        "type": "comment",
+        "z": "f7f17d364858862c",
+        "name": "Telegram",
+        "info": "5077186044:AAGJPkiEM6PTg0phadhQN5fO6sC-aTpVpU0",
+        "x": 750,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ced80261c7808b0f",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "#5CFEF2",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "refresh",
+        "topicType": "str",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "be8f219082382d87"
+            ]
+        ]
+    },
+    {
+        "id": "31aa125dbda0cefa",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Delete",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#f31100",
+        "className": "",
+        "icon": "delete",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "f7cd5aa1b1cc81c8"
+            ]
+        ]
+    },
+    {
+        "id": "f7cd5aa1b1cc81c8",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "Get filepath",
+        "func": "// Get the filename from the flow context\nlet filename = flow.get(\"filepath\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename === undefined) {\n    return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0] !== \".\") {\n    // Only do this if this is a file, we don't delete folders\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "0b135f82c4167c37"
+            ]
+        ]
+    },
+    {
+        "id": "9abed70c1a84e163",
+        "type": "file",
+        "z": "111b52d7f72dcde4",
+        "name": "Delete file",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d1fb9900e550934",
+        "type": "http in",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "url": "/download",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "f4845b5f01b3459e"
+            ]
+        ]
+    },
+    {
+        "id": "4426891007434b2f",
+        "type": "http response",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "f4845b5f01b3459e",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "Extract file",
+        "func": "msg.filename = msg.req.query.filename;\nmsg.contentdisposition = \"attachment; filename=\\\"\" + msg.req.query.filename.replace(/^.*(\\\\|\\/|\\:)/, '') + \"\\\"\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "61f9b4a564ad6ffc"
+            ]
+        ],
+        "outputLabels": [
+            "Folder selected"
+        ]
+    },
+    {
+        "id": "61f9b4a564ad6ffc",
+        "type": "file in",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "filename": "",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [
+                "301011cc86b7bb5a"
+            ]
+        ]
+    },
+    {
+        "id": "301011cc86b7bb5a",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "set headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "headers.content-type",
+                "pt": "msg",
+                "to": "text/csv",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.Content-Disposition",
+                "pt": "msg",
+                "to": "contentdisposition",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 560,
+        "wires": [
+            [
+                "4426891007434b2f"
+            ]
+        ]
+    },
+    {
+        "id": "0c138e847437e572",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Graph",
+        "tooltip": "",
+        "color": "#FFFE00",
+        "bgcolor": "",
+        "className": "",
+        "icon": "show_chart",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "49f1528d3aa277ab"
+            ]
+        ]
+    },
+    {
+        "id": "49f1528d3aa277ab",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "Get filepath",
+        "func": "// Get the filename from the flow context\nlet filename = flow.get(\"filepath\");\n\n// check, if the filename is undefined that means it does not exist yet, nothing is selected yet\n// return: do not output anything\nif (filename === undefined) {\n    return;\n}\n\n// return the filename to the file-in node to delete\nmsg.filename = filename;\n\nif (msg.filename.replace(/^.*(\\\\|\\/|\\:)/, '')[0] !== \".\") {\n    // Only do this if this is a file, we don't delete folders\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "e04a6b965975de4c"
+            ]
+        ]
+    },
+    {
+        "id": "e04a6b965975de4c",
+        "type": "file in",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 460,
+        "y": 500,
+        "wires": [
+            [
+                "3d4282e9e0897475"
+            ]
+        ]
+    },
+    {
+        "id": "3d4282e9e0897475",
+        "type": "csv",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 610,
+        "y": 500,
+        "wires": [
+            [
+                "ac74a4bce6617ee6"
+            ]
+        ]
+    },
+    {
+        "id": "ac74a4bce6617ee6",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "Plot",
+        "func": "var chart = [{\n    \"series\":[],\n    \"data\":[],\n    \"labels\":[msg.filename]\n}];\n\n\n/*\nvar pressure = [];\nvar out2 = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n    pressure.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].pressure});\n    out2.push({\"x\":msg.payload[i].timestamp, \"y\":msg.payload[i].out2*200});\n\n}\nchart[0].data.push(pressure);\nchart[0].data.push(out2);\n*/\n\nlet columns = 0;\n\nfor(var series in msg.payload[0]) {\n    if(series!==\"time\") {\n        chart[0].series.push(series);\n        chart[0].data.push([]);\n        columns++;\n    }\n}\n\n\nfor (var j=0; j<msg.payload.length; j++) {\n   for(var i=0;i<columns;i++) {\n       chart[0].data[i].push({\"x\":msg.payload[j].time, \"y\":msg.payload[j][chart[0].series[i]]});\n   } \n}\n\n\n\n\nmsg.payload = chart;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 500,
+        "wires": [
+            [
+                "fa1750f1405d7cfd",
+                "2335365d4a57db45"
+            ]
+        ]
+    },
+    {
+        "id": "fa1750f1405d7cfd",
+        "type": "ui_chart",
+        "z": "111b52d7f72dcde4",
+        "name": "desktop",
+        "group": "ddb72df8452ba7d7",
+        "order": 1,
+        "width": 28,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36e25e118ac16fe2",
+        "type": "ui_toast",
+        "z": "111b52d7f72dcde4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Yes",
+        "cancel": "No",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "e7b0b9da37e7d796"
+            ]
+        ]
+    },
+    {
+        "id": "0b135f82c4167c37",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "set msg",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Confirmation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Delete \" & filename & \"?\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 440,
+        "wires": [
+            [
+                "36e25e118ac16fe2"
+            ]
+        ]
+    },
+    {
+        "id": "e7b0b9da37e7d796",
+        "type": "switch",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Yes",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 440,
+        "wires": [
+            [
+                "9abed70c1a84e163"
+            ]
+        ]
+    },
+    {
+        "id": "be8f219082382d87",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "Set folder",
+        "func": "let folder = flow.get(\"folder\") || \"/\";\nflow.set(\"folder\", folder);\n\nlet hidden = flow.get(\"hidden\") || false;\nflow.set(\"hidden\", hidden);\n\nif (msg.topic===\"parent\") {\n    var path = folder.split('/');\n    path.pop();\n    folder = path.join('/'); \n    if (folder===\"\") folder=\"/\";\n    flow.set(\"folder\", folder);\n}\n\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    flow.set(\"folder\", folder);\n}\n\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n    flow.set(\"hidden\", hidden);\n}\n\n//if (msg.topic===\"refresh\") {\n//}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "956b362d3c90f8d8",
+                "dd1cc284bca44135"
+            ]
+        ]
+    },
+    {
+        "id": "64d7b8680fb5a101",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Parent",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow_upwards",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "parent",
+        "topicType": "str",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "be8f219082382d87"
+            ]
+        ]
+    },
+    {
+        "id": "e030d0f2300f0ba1",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#51aa00",
+        "className": "",
+        "icon": "home",
+        "payload": "home",
+        "payloadType": "flow",
+        "topic": "change",
+        "topicType": "str",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "be8f219082382d87"
+            ]
+        ]
+    },
+    {
+        "id": "13d5391a3c7fd608",
+        "type": "ui_switch",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "label": "Hidden",
+        "tooltip": "Show hidden files or not",
+        "group": "160e81fb.f1c86e",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "hidden",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "check_box",
+        "oncolor": "#000000",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "check_box_outline_blank",
+        "offcolor": "#000000",
+        "animate": true,
+        "className": "",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "be8f219082382d87"
+            ]
+        ]
+    },
+    {
+        "id": "2335365d4a57db45",
+        "type": "ui_chart",
+        "z": "111b52d7f72dcde4",
+        "name": "mobile",
+        "group": "af2fe563cfd2cfa6",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 930,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85090a46f8fa54c4",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Desktop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "computer",
+        "payload": "{\"group\":{\"show\":[\"Files_Desktop\"],\"hide\":[\"Files_Mobile\"]}}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "973fa9e08c8aee33"
+            ]
+        ]
+    },
+    {
+        "id": "973fa9e08c8aee33",
+        "type": "ui_ui_control",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "events": "all",
+        "x": 460,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6d2651503377b9d",
+        "type": "ui_button",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "160e81fb.f1c86e",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Mobile",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "smartphone",
+        "payload": "{\"group\":{\"show\":[\"Files_Mobile\"],\"hide\":[\"Files_Desktop\"]}}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "f740fdf5197ffcf3"
+            ]
+        ]
+    },
+    {
+        "id": "f740fdf5197ffcf3",
+        "type": "ui_ui_control",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "events": "all",
+        "x": 760,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8acb2b7c94f075e9",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "Change",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "change",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "be8f219082382d87"
+            ]
+        ]
+    },
+    {
+        "id": "5f1be4ecc1b1bfe1",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "Set filepath",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filepath",
+                "pt": "flow",
+                "to": "payload.name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 120,
+        "wires": [
+            [
+                "bdd0d955d05693da"
+            ]
+        ]
+    },
+    {
+        "id": "956b362d3c90f8d8",
+        "type": "fs-file-lister",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "start": "data",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "both",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "0f7a8e6438a00194"
+            ]
+        ]
+    },
+    {
+        "id": "0f7a8e6438a00194",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "table data",
+        "func": "for (var i = 0; i < msg.payload.length; i++) {\n//  msg.payload[i].stat.size = msg.payload[i].stat.size / 1024;\n    msg.payload[i].stat.created = msg.payload[i].stat.created.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.changed = msg.payload[i].stat.changed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.accessed = msg.payload[i].stat.accessed.toISOString().slice(0, 19).replace('T', ' ');\n    msg.payload[i].stat.statusChanged = msg.payload[i].stat.statusChanged.toISOString().slice(0, 19).replace('T', ' ');\n//  msg.payload[i].fname = (msg.payload[i].stat.isFile?\"\":\"[\") + msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '')+(msg.payload[i].stat.isFile?\"\":\"]\");\n    msg.payload[i].fname = (msg.payload[i].stat.isFile ? \"\" : \"<b>[\") + msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '') + (msg.payload[i].stat.isFile ? \"\" : \"]</b>\");\n//  msg.payload[i].link = msg.payload[i].stat.isDirectory ? \"\" : \"/download?filename=\" + msg.payload[i].name;\n    msg.payload[i].link = msg.payload[i].stat.isDirectory ? \"\" : \"<a href=\\\"/download?filename=\" + msg.payload[i].name + \"\\\"><img src=\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACf0lEQVR42mNkwAE0ApLF/wqIKwOZ/5k/vLxzY8Pc19jUMaILGPdsjfik4VDy5ieD0X+oPBPQEBF2htN8Nw50nynxXoPVADEzVw6himVLX/znCmLAAyQZv6142xEV/+rU7l8oBiitfrn2HRMPXDPQVgZWJgj797//DP+QHCv878uyu6Hi0XADJKuXR3438luGbJO7GAPDbP2/YHbqsc8MO7/wAVUzweW5zm0KetYauR5sgPCiJ2f/cgsa4TIg7fA7hl1vWRj+cfIDnQYxhPnL22Nv4+WsGZnldSR4+048AxrPCHOSuzgDg6nAf4ZUuX9gxbOvfWI49/4fw643TAy/OaCG/P//73ORmSgji56TDU/95sPItjuLMjDM1PvLwAZ18a+//xmyj31g2PcWKMDMzPCbnRfsnS/1nqaMzFrWtrzNuw6hhzbMEKBNYM37gZoZmRghbmRiZvjFxs3wqcrZjJFRQEKab86dx4yMjIyYhvxnYPnyjmH/G0awZogSKM3I+O9FmpY4WISn68h5FmVDfZAmTmYGBjvh/3BDmP7+YWD++xOs6cCL3wx/gBEMYv++dfrU63pfc7CtrFZB8dxFixaAwpGf5R9DtsRnRKwDxRih9NQ7fxl+MjCDDXjbEx/x48yOlTB1zFxFi9azWQf7gvzM+O8vA8uvL+DEBFIMcTHC+d8Or177fmpOGFDgH8LfrOx8XDkzl7Jah/iAFf//x8D2+xsDM5CGRTBU8/r3MwrjGP7+/oItM7GymvvFs/sX5DGrmWqDgo7t7w8Glr+///2+ffrS501TJ/44u3MJUN0fnLkRCtgYuQXkmMQVlBj+A93y8v7d/98+PgElCXSFAKXm39j74So1AAAAAElFTkSuQmCC\\\" /></a>\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "6479c9674ee4c649"
+            ]
+        ]
+    },
+    {
+        "id": "6479c9674ee4c649",
+        "type": "sort",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "order": "ascending",
+        "as_num": false,
+        "target": "payload",
+        "targetType": "msg",
+        "msgKey": "$lowercase(fname)\t",
+        "msgKeyType": "jsonata",
+        "seqKey": "payload",
+        "seqKeyType": "msg",
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "6de7a91d24be29e1",
+                "50a31fdded68fd98"
+            ]
+        ]
+    },
+    {
+        "id": "9d3c9ab668d4d29d",
+        "type": "switch",
+        "z": "111b52d7f72dcde4",
+        "name": "is file?",
+        "property": "payload.stat.isFile",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "5f1be4ecc1b1bfe1",
+                "2015d6492579c3e6"
+            ],
+            [
+                "8acb2b7c94f075e9"
+            ]
+        ]
+    },
+    {
+        "id": "0dbef6831f2ca330",
+        "type": "yaml",
+        "z": "111b52d7f72dcde4",
+        "property": "payload",
+        "name": "",
+        "x": 770,
+        "y": 80,
+        "wires": [
+            [
+                "ffa3ba810c0b280e"
+            ]
+        ]
+    },
+    {
+        "id": "ffa3ba810c0b280e",
+        "type": "ui_template",
+        "z": "111b52d7f72dcde4",
+        "group": "26e8fe8026c92abb",
+        "name": "Properties",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<textarea rows=\"21\">{{msg.payload}}</textarea>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38da03d9810a48c7",
+        "type": "inject",
+        "z": "111b52d7f72dcde4",
+        "name": "startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "ui_control",
+                "v": "{\"tabulator\":{\"selectable\":1}}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "50a31fdded68fd98",
+                "85090a46f8fa54c4",
+                "5295aac0d50e4afa"
+            ]
+        ]
+    },
+    {
+        "id": "bdd0d955d05693da",
+        "type": "file in",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "062e2738832b5754"
+            ]
+        ]
+    },
+    {
+        "id": "05802030cf171e1a",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "clean",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.link",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.fname",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "0dbef6831f2ca330"
+            ]
+        ]
+    },
+    {
+        "id": "83fba8629d1025e7",
+        "type": "ui_chart",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "group": "26e8fe8026c92abb",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "label": "File sizes",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "4",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 460,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5be20cfc9f21ed75",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "chart data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.stat.size",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 20,
+        "wires": [
+            [
+                "83fba8629d1025e7"
+            ]
+        ]
+    },
+    {
+        "id": "6de7a91d24be29e1",
+        "type": "split",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 310,
+        "y": 20,
+        "wires": [
+            [
+                "5be20cfc9f21ed75"
+            ]
+        ]
+    },
+    {
+        "id": "50a31fdded68fd98",
+        "type": "ui_table",
+        "z": "111b52d7f72dcde4",
+        "group": "160e81fb.f1c86e",
+        "name": "",
+        "order": 10,
+        "width": 16,
+        "height": 10,
+        "columns": [
+            {
+                "field": "fname",
+                "title": "Name",
+                "width": "55%",
+                "align": "left",
+                "formatter": "html",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "stat.size",
+                "title": "Size",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "stat.created",
+                "title": "Created",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "stat.changed",
+                "title": "Changed",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "link",
+                "title": "",
+                "width": "1%",
+                "align": "left",
+                "formatter": "html",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "9d3c9ab668d4d29d",
+                "05802030cf171e1a"
+            ]
+        ]
+    },
+    {
+        "id": "6ae5b3d9a2876e46",
+        "type": "ui_form",
+        "z": "111b52d7f72dcde4",
+        "name": "Editor",
+        "label": "",
+        "group": "4128a70510a0cd4e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "File name",
+                "value": "filename",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "",
+                "value": "content",
+                "type": "multiline",
+                "required": true,
+                "rows": 9
+            }
+        ],
+        "formValue": {
+            "filename": "",
+            "content": ""
+        },
+        "payload": "",
+        "submit": "Save",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 930,
+        "y": 240,
+        "wires": [
+            [
+                "d2ca8a35648bd4e1"
+            ]
+        ]
+    },
+    {
+        "id": "062e2738832b5754",
+        "type": "function",
+        "z": "111b52d7f72dcde4",
+        "name": "form data",
+        "func": "var cloned = RED.util.cloneMessage(msg);\nvar formdata = {payload:{}};\nformdata.payload.filename = cloned.filename;\nformdata.payload.content = cloned.payload;\nreturn formdata;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 180,
+        "wires": [
+            [
+                "6ae5b3d9a2876e46"
+            ]
+        ]
+    },
+    {
+        "id": "d2ca8a35648bd4e1",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "set msg",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Confirmation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Save \" & filename & \"?\"",
+                "tot": "jsonata"
+            },
+            {
+                "t": "move",
+                "p": "payload.filename",
+                "pt": "msg",
+                "to": "filename",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.content",
+                "pt": "msg",
+                "to": "content",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "15484770aeb98dda"
+            ]
+        ]
+    },
+    {
+        "id": "15484770aeb98dda",
+        "type": "ui_toast",
+        "z": "111b52d7f72dcde4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Yes",
+        "cancel": "No",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "93bafe35fa99e065"
+            ]
+        ]
+    },
+    {
+        "id": "93bafe35fa99e065",
+        "type": "switch",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Yes",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 320,
+        "wires": [
+            [
+                "0aa9d99349b3ad86"
+            ]
+        ]
+    },
+    {
+        "id": "bc6d7e53f170bd27",
+        "type": "file",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 920,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0aa9d99349b3ad86",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "content",
+        "rules": [
+            {
+                "t": "move",
+                "p": "content",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 320,
+        "wires": [
+            [
+                "bc6d7e53f170bd27"
+            ]
+        ]
+    },
+    {
+        "id": "5295aac0d50e4afa",
+        "type": "exec",
+        "z": "111b52d7f72dcde4",
+        "command": "pwd",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "3334e9a10fe0ac84"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3334e9a10fe0ac84",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "Set home",
+        "rules": [
+            {
+                "t": "set",
+                "p": "home",
+                "pt": "flow",
+                "to": "$trim(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "e030d0f2300f0ba1"
+            ]
+        ]
+    },
+    {
+        "id": "876cddb7e1f66bbe",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "Get folder",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "folder",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "path & \"/\" & file.name",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 20,
+        "wires": [
+            [
+                "7ff8bfc3a49af168"
+            ]
+        ]
+    },
+    {
+        "id": "2015d6492579c3e6",
+        "type": "ui_text",
+        "z": "111b52d7f72dcde4",
+        "group": "160e81fb.f1c86e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Path:",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7ff8bfc3a49af168",
+        "type": "file",
+        "z": "111b52d7f72dcde4",
+        "name": "",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 920,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd1cc284bca44135",
+        "type": "change",
+        "z": "111b52d7f72dcde4",
+        "name": "is folder",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "payload.start",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "2015d6492579c3e6"
+            ]
+        ]
+    },
+    {
+        "id": "e5721e5199c3c77a",
+        "type": "ui_chart",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "group": "9ee91c1b.c2b67",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "{{name}}",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 890,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "229a5718139621a6",
+        "type": "http in",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "url": "/atlas",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "4a547f9d539ad303"
+            ]
+        ]
+    },
+    {
+        "id": "cd1976cfef23f8e7",
+        "type": "http response",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4cc5fe58b2fd7841",
+        "type": "http request",
+        "z": "4cbb56a89476ae35",
+        "name": "GET /atlas",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "{{{link}}}/atlas",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "61bb4ad981f0f35c",
+                "da7dd6709c23e99d"
+            ]
+        ]
+    },
+    {
+        "id": "401360e871c5fc0c",
+        "type": "template",
+        "z": "4cbb56a89476ae35",
+        "name": "command list",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"node_ver\": \"node -v\",\n\"npm_ver\": \"npm -v\",\n\"arch\": \"node -e \\\"console.log(require('os').arch())\\\"\",\n\"n_cpus\": \"node -e \\\"console.log(require('os').cpus().length)\\\"\",\n\"cpu\": \"node -e \\\"console.log(require('os').cpus()[0].model)\\\"\",\n\"cpus\": \"node -e \\\"console.log(require('os').cpus())\\\"\",\n\"endianness\": \"node -e \\\"console.log(require('os').endianness())\\\"\",\n\"freemem\": \"node -e \\\"console.log(require('os').freemem()/1024/1024/1024)\\\"\",\n\"homedir\": \"node -e \\\"console.log(require('os').homedir())\\\"\",\n\"hostname\": \"node -e \\\"console.log(require('os').hostname())\\\"\",\n\"ip\": \"node -e \\\"console.log(require('os').networkInterfaces().eth0[0]).address\\\"\",\n\"network\": \"node -e \\\"console.log(require('os').networkInterfaces())\\\"\",\n\"platform\": \"node -e \\\"console.log(require('os').platform())\\\"\",\n\"release\": \"node -e \\\"console.log(require('os').release())\\\"\",\n\"totalmem\": \"node -e \\\"console.log(require('os').totalmem()/1024/1024/1024)\\\"\",\n\"uptime\": \"node -e \\\"console.log(require('os').uptime()/60/60)\\\"\",\n\"username\": \"node -e \\\"console.log(require('os').userInfo().username)\\\"\",\n\"uid\": \"node -e \\\"console.log(require('os').userInfo().uid)\\\"\",\n\"gid\": \"node -e \\\"console.log(require('os').userInfo().gid)\\\"\",\n\"shell\": \"node -e \\\"console.log(require('os').userInfo().shell)\\\"\",\n\"userInfo\": \"node -e \\\"console.log(require('os').userInfo())\\\"\",\n\"type\": \"node -e \\\"console.log(require('os').type())\\\"\",\n\"os_ver\": \"node -e \\\"console.log(require('os').version())\\\"\"}",
+        "output": "json",
+        "x": 710,
+        "y": 260,
+        "wires": [
+            [
+                "426b30b91abaad15"
+            ]
+        ]
+    },
+    {
+        "id": "246667bb76ea2a5f",
+        "type": "exec",
+        "z": "4cbb56a89476ae35",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "5297a276c5d64eb3"
+            ],
+            [
+                "5297a276c5d64eb3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "426b30b91abaad15",
+        "type": "split",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "x": 890,
+        "y": 260,
+        "wires": [
+            [
+                "246667bb76ea2a5f"
+            ]
+        ]
+    },
+    {
+        "id": "89da744404a1f88a",
+        "type": "join",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 690,
+        "y": 340,
+        "wires": [
+            [
+                "cd1976cfef23f8e7",
+                "2007fc8b12049d15"
+            ]
+        ]
+    },
+    {
+        "id": "5297a276c5d64eb3",
+        "type": "function",
+        "z": "4cbb56a89476ae35",
+        "name": "clear spaces",
+        "func": "msg.payload = msg.payload.replace(/\\n/g, \"\").replace(/ +/g, \" \")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "89da744404a1f88a"
+            ]
+        ]
+    },
+    {
+        "id": "ac4b8a6d2964a521",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "update Atlas",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query",
+                "pt": "msg",
+                "to": "{\"name\": name}",
+                "tot": "jsonata"
+            },
+            {
+                "t": "move",
+                "p": "name",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "link",
+                "pt": "msg",
+                "to": "payload.link",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.time",
+                "pt": "msg",
+                "to": "$fromMillis(time)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "73195a6035ed4d9a",
+                "4cda93ed8460ba47"
+            ]
+        ]
+    },
+    {
+        "id": "61bb4ad981f0f35c",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$fromMillis(time, \"[Y0001]-[M01]-[D01] [H01]:[m01]:[s01]\\t\", \"+0100\") & statusCode\" & \"\\tinternal\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "b9e305ca4e49cf41"
+            ]
+        ]
+    },
+    {
+        "id": "b9e305ca4e49cf41",
+        "type": "file",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "filename": "public/activations.log",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "fae2ca0dbb7b8653"
+            ]
+        ]
+    },
+    {
+        "id": "fae2ca0dbb7b8653",
+        "type": "ui_text",
+        "z": "4cbb56a89476ae35",
+        "group": "9ee91c1b.c2b67",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Last update",
+        "format": "{{msg.payload| limitTo: 19}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 910,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8dfb3ae1ef57275f",
+        "type": "inject",
+        "z": "4cbb56a89476ae35",
+        "name": "5 min",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/5 0-23 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "OpenNode",
+        "payload": "https://instance-30160-ehoyibzpwa-ew.a.run.app",
+        "payloadType": "str",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "d2f2fce0127e2143",
+                "049345050ca83074"
+            ]
+        ]
+    },
+    {
+        "id": "d2f2fce0127e2143",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "set flow vars",
+        "rules": [
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "flow",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "link",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a547f9d539ad303",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "get flow vars",
+        "rules": [
+            {
+                "t": "set",
+                "p": "link",
+                "pt": "msg",
+                "to": "link",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "msg",
+                "to": "name",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "time",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "401360e871c5fc0c"
+            ]
+        ]
+    },
+    {
+        "id": "da7dd6709c23e99d",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "statusCode",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 100,
+        "wires": [
+            [
+                "e5721e5199c3c77a"
+            ]
+        ]
+    },
+    {
+        "id": "049345050ca83074",
+        "type": "change",
+        "z": "4cbb56a89476ae35",
+        "name": "get flow vars",
+        "rules": [
+            {
+                "t": "set",
+                "p": "link",
+                "pt": "msg",
+                "to": "link",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "msg",
+                "to": "name",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "time",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "4cc5fe58b2fd7841"
+            ]
+        ]
+    },
+    {
+        "id": "2007fc8b12049d15",
+        "type": "delay",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "ac4b8a6d2964a521"
+            ]
+        ]
+    },
+    {
+        "id": "73195a6035ed4d9a",
+        "type": "mongodb out",
+        "z": "4cbb56a89476ae35",
+        "mongodb": "2bb8dfa0.48854",
+        "name": "",
+        "collection": "cloud",
+        "payonly": true,
+        "upsert": true,
+        "multi": false,
+        "operation": "update",
+        "x": 790,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "99f1453bf4a4fa6e",
+        "type": "comment",
+        "z": "4cbb56a89476ae35",
+        "name": "Mongo DB Atlas",
+        "info": "(gamesup / mongosup)\n${ATLAS_USERNAME}\n${ATLAS_PASSWORD}",
+        "x": 880,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f1bc894a1c936a80",
+        "type": "ui_template",
+        "z": "4cbb56a89476ae35",
+        "group": "9ee91c1b.c2b67",
+        "name": "banner",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "format": "<a href=\"https://cloud.mongodb.com/\">\n<img height=\"32px\" src=\"https://webimages.mongodb.com/_com_assets/cms/MongoDB-Atlas-Logo-Black-hvfxuesorm.svg\" />\n</a>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cda93ed8460ba47",
+        "type": "debug",
+        "z": "4cbb56a89476ae35",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 500,
+        "wires": []
+    }
+]
