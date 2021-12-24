@@ -167,7 +167,7 @@ module.exports = {
      * If set to false, this is disabled.
      */
     //httpAdminRoot: '/admin',
-		httpAdminRoot: '/editor',
+		httpAdminRoot: '/',
 
     /** The following property can be used to add a custom middleware function
      * in front of all admin http routes. For example, to set custom http
