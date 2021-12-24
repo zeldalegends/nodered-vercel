@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "npm install",
 		"test": "nodemon -e 'restart' index.js",
-		"start": "node './node_modules/node-red/red.js --userDir ./'"
+		"start": "node ./node_modules/node-red/red.js --userDir ./"
 	},
 	"keywords": [],
 	"author": "alerox",

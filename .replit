@@ -1,1 +1,1 @@
-run = "./node_modules/.bin/nodemon --ext 'restart' --exec './node_modules/node-red/red.js --userDir ./'
+run = "./node_modules/.bin/nodemon --ext 'restart' --exec './node_modules/node-red/red.js --userDir ./'"
