@@ -16,8 +16,6 @@
 		"node-red": "latest",
 		"node-red-contrib-fs": "latest",
 		"node-red-contrib-telegrambot-home": "latest",
-		"node-red-contrib-ui-upload": "latest",
-		"node-red-contrib-watchdirectory": "fatoldsun00/node-red-contrib-watchdirectory",
 		"node-red-dashboard": "latest",
 		"node-red-node-mongodb": "latest",
 		"node-red-node-ui-table": "latest"
