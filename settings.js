@@ -42,7 +42,7 @@ module.exports = {
      * lost.
      */
     //credentialSecret: "a-secret-key",
-		credentialSecret: false,
+	credentialSecret: false,
 
 
     /** By default, the flow JSON will be formatted over multiple lines making
@@ -223,7 +223,7 @@ module.exports = {
      * that should be served at http://localhost:1880/.
      */
     //httpStatic: '/home/nol/node-red-static/',
-		httpStatic: './public',
+	httpStatic: './public',
 
 /*******************************************************************************
  * Runtime Settings
@@ -281,7 +281,7 @@ module.exports = {
       * their values. Setting this to true will cause the keys to be listed.
       */
      //exportGlobalContextKeys: false,
-		 exportGlobalContextKeys: true,
+	exportGlobalContextKeys: true,
 
      /** Configure how the runtime will handle external npm modules.
       * This covers:
