@@ -12,7 +12,6 @@
 	"author": "alerox",
 	"license": "ISC",
 	"dependencies": {
-		"@replit/database": "latest",
 		"express": "latest",
 		"node-red": "latest",
 		"node-red-contrib-fs": "latest",
