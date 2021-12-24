@@ -1,11 +1,11 @@
 {
-	"name": "nodered-replit",
+	"name": "nodered-on-cloud",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"build": "npm install",
-		"test": "nodemon -e 'restart' index.js",
+		"test": "node index.js",
 		"start": "node ./node_modules/node-red/red.js --userDir ./"
 	},
 	"keywords": [],
@@ -22,9 +22,5 @@
 		"node-red-dashboard": "latest",
 		"node-red-node-mongodb": "latest",
 		"node-red-node-ui-table": "latest"
-	},
-	"devDependencies": {
-		"node": "16.x",
-		"nodemon": "latest"
 	}
 }

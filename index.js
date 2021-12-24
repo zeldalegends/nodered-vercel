@@ -7,7 +7,7 @@ app.use("/", express.static("public"));
 var server = http.createServer(app);
 
 var settings = {
-	httpAdminRoot: "/editor",
+	httpAdminRoot: "/",
 	httpNodeRoot: "/",
 	userDir: ".",
 	flowFile: "flows.json",
