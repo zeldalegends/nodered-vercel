@@ -4,9 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "nodemon --ext 'restart' --exec './node_modules/node-red/red.js --userDir ./'",
-		"embedded": "nodemon -e 'restart' index.js",
-		"start": "node index.js",
+		"build": "npm install",
+		"test": "nodemon -e 'restart' index.js",
+		"start": "node './node_modules/node-red/red.js --userDir ./'"
 	},
 	"keywords": [],
 	"author": "alerox",
